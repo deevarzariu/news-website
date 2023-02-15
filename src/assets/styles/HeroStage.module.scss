@@ -1,0 +1,8 @@
+.hero-stage {
+  display: grid;
+  grid-template-areas:
+    "large large top"
+    "large large bottom";
+  gap: 20px 25px;
+  margin-bottom: 25px;
+}
