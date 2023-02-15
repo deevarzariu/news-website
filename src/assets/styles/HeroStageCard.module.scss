@@ -1,22 +1,24 @@
+@import "mixins";
+
 .card {
   position: relative;
+  cursor: pointer;
 
   .image {
     object-fit: cover;
-    max-height: 100%;
+    height: 100%;
     width: 100%;
   }
 
   .title {
+    @include show-lines(2);
     position: absolute;
     bottom: 0;
+    left: 0;
+    right: 0;
     font-size: 1.5rem;
     color: #fff;
     padding: 5px 15px;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
     background: #00000080;
   }
 }
@@ -28,10 +30,24 @@
 
 .top {
   grid-area: top;
-  height: 240px;
 }
 
 .bottom {
   grid-area: bottom;
+}
+
+.top,
+.bottom {
   height: 240px;
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .top,
+  .bottom {
+    height: 500px;
+  }
 }

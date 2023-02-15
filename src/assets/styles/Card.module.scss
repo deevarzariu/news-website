@@ -1,5 +1,8 @@
+@import "mixins";
+
 .card {
   border-radius: 4px;
+  cursor: pointer;
 
   &__image-container {
     height: 250px;
@@ -8,15 +11,27 @@
   &__image {
     object-fit: cover;
     height: 100%;
-    max-width: 100%;
+    width: 100%;
+  }
+
+  &__text-container {
+    margin-top: 10px;
   }
 
   &__title {
-    font-weight: 500;
+    @include show-lines(2);
+    font-weight: 600;
     font-size: 1.5rem;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+  }
+
+  &__description {
+    @include show-lines(3);
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 800px) {
+  .card__image-container {
+    height: 350px;
   }
 }
