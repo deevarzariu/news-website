@@ -1,3 +1,5 @@
+@import "variables";
+
 .header {
   position: absolute;
   top: 0;
@@ -5,11 +7,27 @@
   right: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 15px 5%;
-  background-color: #000;
+  background-color: $black;
+
+  &__linkHome {
+    flex-grow: 1;
+  }
+
+  &__links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__link {
     text-decoration: none;
-    color: #fff;
+    color: $white;
+
+    &Home {
+      @extend .header__link;
+      font-size: 1.5rem;
+    }
   }
 }

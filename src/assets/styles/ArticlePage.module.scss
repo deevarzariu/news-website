@@ -1,3 +1,5 @@
+@import "variables";
+
 .article {
   padding: 5% 25%;
 
@@ -29,12 +31,12 @@
     margin-top: 20px;
 
     &__text {
-      color: #000;
+      color: $black;
       font-weight: 600;
       text-decoration: none;
 
       &:hover {
-        color: #0000e7;
+        color: $navyblue;
       }
     }
   }

@@ -1,6 +1,6 @@
-import { Article } from "../types/Article";
-import style from "../assets/styles/Card.module.scss";
 import { useNavigate } from "react-router-dom";
+import { Article } from "types/Article";
+import style from "assets/styles/Card.module.scss";
 
 type Props = {
   article: Article;

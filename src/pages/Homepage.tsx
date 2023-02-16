@@ -1,7 +1,7 @@
 import { getTopHeadlines } from "services/News";
 import { Article } from "types/Article";
 import { useEffect, useState } from "react";
-import Grid from "components/Grid";
+import Grid from "components/common/Grid";
 import HeroStage from "components/Homepage/HeroStage";
 
 function Homepage() {

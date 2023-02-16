@@ -1,6 +1,6 @@
-import { Article } from "../types/Article";
+import { Article } from "../../types/Article";
 import Card from "./Card";
-import style from "../assets/styles/Grid.module.scss";
+import style from "assets/styles/Grid.module.scss";
 
 type Props = {
   articles: Article[];
