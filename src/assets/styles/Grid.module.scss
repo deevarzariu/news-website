@@ -1,7 +1,7 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px 20px;
+  gap: 30px 20px;
 }
 
 .large-item {
@@ -35,6 +35,5 @@
 @media (max-width: 800px) {
   .grid {
     grid-template-columns: 1fr;
-    gap: 30px 20px;
   }
 }

@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "components/Header";
+import Header from "components/Header/Header";
 import Homepage from "pages/Homepage";
 import CategoryPage from "pages/CategoryPage";
 import ArticlePage from "pages/ArticlePage";
@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/:categoryId" element={<CategoryPage />} />
+        <Route path="/:category" element={<CategoryPage />} />
         <Route path="/article/:articleId" element={<ArticlePage />} />
       </Routes>
     </BrowserRouter>

@@ -1,7 +1,6 @@
 @import "mixins";
 
 .card {
-  border-radius: 4px;
   cursor: pointer;
 
   &__image-container {
@@ -26,7 +25,7 @@
 
   &__description {
     @include show-lines(3);
-    margin-top: 5px;
+    margin-top: 10px;
   }
 }
 

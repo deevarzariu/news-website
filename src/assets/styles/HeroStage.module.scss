@@ -10,6 +10,14 @@
 @media (max-width: 1200px) {
   .hero-stage {
     grid-template-areas:
+      "large large"
+      "top bottom";
+  }
+}
+
+@media (max-width: 800px) {
+  .hero-stage {
+    grid-template-areas:
       "large"
       "top"
       "bottom";
