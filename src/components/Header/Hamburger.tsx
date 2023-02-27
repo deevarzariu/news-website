@@ -1,15 +1,17 @@
 import style from "assets/styles/Hamburger.module.scss";
 
 type Props = {
+  isOpen: boolean;
   onToggle: () => void;
 };
 
-function Hamburger({ onToggle }: Props) {
+function Hamburger({ isOpen, onToggle }: Props) {
+  const barClassName = `${style.bar} ${isOpen ? style.active : ""}`;
   return (
     <button className={style.toggleBtn} onClick={onToggle}>
-      <span className={style.bar}></span>
-      <span className={style.bar}></span>
-      <span className={style.bar}></span>
+      <span className={barClassName}></span>
+      <span className={barClassName}></span>
+      <span className={barClassName}></span>
     </button>
   );
 }

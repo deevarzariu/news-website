@@ -25,7 +25,7 @@ function Header() {
           <Link className={style.navbar__title} to="/">
             Generic News Website
           </Link>
-          <Hamburger onToggle={toggle} />
+          <Hamburger isOpen={isOpen} onToggle={toggle} />
         </div>
         <div className={listClassName}>
           {CATEGORIES.map(({ path, name }) => (
