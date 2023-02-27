@@ -1,0 +1,36 @@
+@import "variables";
+
+.toggleBtn {
+  background: none;
+  border: none;
+  display: none;
+
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+
+  .bar {
+    display: block;
+    height: 3px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: $white;
+
+    // WIP
+    // &:nth-child(1) {
+    //   transform: translateY(9px) rotate(45deg);
+    // }
+
+    // &:nth-child(2) {
+    //   opacity: 0;
+    // }
+
+    // &:nth-child(3) {
+    //   transform: translateY(-9px) rotate(-45deg);
+    // }
+  }
+}

@@ -1,5 +1,5 @@
 .page {
-  padding: 75px 5% 50px;
+  padding: 50px 5%;
 }
 
 .large-image {
@@ -12,6 +12,6 @@
 
 @media (max-width: 800px) {
   .page {
-    padding: 100px 5% 50px;
+    padding: 25px 5%;
   }
 }

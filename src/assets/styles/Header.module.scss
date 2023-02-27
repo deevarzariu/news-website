@@ -1,38 +1,66 @@
 @import "variables";
 
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+.navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 15px 5%;
+  justify-content: space-between;
   background-color: $black;
+  padding: 20px 5%;
 
   @media (max-width: 800px) {
-    position: static;
-    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-  &__linkHome {
-    flex-grow: 1;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    color: $white;
+    text-decoration: none;
   }
 
   &__links {
-    flex-grow: 1;
     display: flex;
-    justify-content: space-between;
-  }
 
-  &__link {
-    text-decoration: none;
-    color: $white;
+    @media (max-width: 800px) {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-top: 0.5rem;
 
-    &Home {
-      @extend .header__link;
-      font-size: 1.5rem;
+      &.active {
+        display: flex;
+      }
+    }
+
+    .navbar__link {
+      display: block;
+      text-decoration: none;
+      color: $white;
+      padding: 0 1rem;
+
+      @media (max-width: 800px) {
+        padding: 0.5rem 1rem;
+      }
+
+      &:last-child {
+        padding-right: 0;
+
+        @media screen {
+          padding-right: 1rem;
+        }
+      }
+
+      &:hover {
+        color: $lightgrey;
+      }
     }
   }
 }
