@@ -11,6 +11,11 @@
   padding: 15px 5%;
   background-color: $black;
 
+  @media (max-width: 800px) {
+    position: static;
+    height: 100vh;
+  }
+
   &__linkHome {
     flex-grow: 1;
   }

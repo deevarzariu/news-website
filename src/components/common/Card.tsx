@@ -17,7 +17,11 @@ function Card({ article }: Props) {
   return (
     <div className={style.card} onClick={openArticle}>
       <div className={style["card__image-container"]}>
-        <img className={style.card__image} src={article.urlToImage} alt="" />
+        <img
+          className={style.card__image}
+          src={article.urlToImage || require("assets/images/default.jpg")}
+          alt=""
+        />
       </div>
       <div className={style["card__text-container"]}>
         <div className={style.card__title}>{article.title}</div>

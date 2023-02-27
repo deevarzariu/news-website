@@ -9,3 +9,9 @@
 .small-image {
   height: 200px;
 }
+
+@media (max-width: 800px) {
+  .page {
+    padding: 100px 5% 50px;
+  }
+}

@@ -17,7 +17,11 @@ function HeroStageCard({ article, position }: Props) {
 
   return (
     <div className={`${style.card} ${style[position]}`} onClick={openArticle}>
-      <img className={style.image} src={article.urlToImage} alt="" />
+      <img
+        className={style.image}
+        src={article.urlToImage || require("assets/images/default.jpg")}
+        alt=""
+      />
       <div className={style.title}>{article.title}</div>
     </div>
   );
